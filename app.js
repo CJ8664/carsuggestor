@@ -2,6 +2,17 @@ var express = require('express');
 var app = express();
 var handlebars = require('express-handlebars');
 var bodyParser = require('body-parser');
+var {
+  Client
+} = require('pg')
+
+const client = new Client({
+  user: 'chiragjain',
+  host: 'localhost',
+  database: 'carsuggest',
+  password: '',
+  port: 5432,
+})
 
 // Handlebar Code
 handlebars = handlebars.create({
@@ -20,12 +31,26 @@ app.listen(app.get('port'), function() {
   console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate');
 });
 
+client.connect()
+
 // Show the form
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
   res.render('index');
 })
 
 // Get the result from Database
-app.post('/showcar', function (req, res) {
-  res.render('result');
+app.post('/showcar', function(req, res) {
+
+  client.query('SELECT NOW()', (err, res) => {
+    console.log(err, res)
+    client.end()
+  })
+
+  res.render('result', {
+    car: "BMW"
+  });
 })
+
+// client.end()
+//   .then(() => console.log('client has disconnected'))
+//   .catch(err => console.error('error during disconnection', err.stack))
