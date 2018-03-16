@@ -1,0 +1,26 @@
+{
+  "name": "carsuggestor",
+  "version": "1.0.0",
+  "description": "A small application that suggests a car based on user's personality and lifestyle",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJ8664/carsuggestor.git"
+  },
+  "author": "Chirag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CJ8664/carsuggestor/issues"
+  },
+  "homepage": "https://github.com/CJ8664/carsuggestor#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1"
+  }
+}
