@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var handlebars = require('express-handlebars');
+var bodyParser = require('body-parser');
 
 // Handlebar Code
 handlebars = handlebars.create({
@@ -26,5 +27,5 @@ app.get('/', function (req, res) {
 
 // Get the result from Database
 app.post('/showcar', function (req, res) {
-  res.render('index');
+  res.render('result');
 })
