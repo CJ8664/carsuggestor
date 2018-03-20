@@ -41,10 +41,19 @@ app.get('/', function(req, res) {
 // Get the result from Database
 app.post('/showcar', function(req, res) {
 
-  client.query('SELECT NOW()', (err, res) => {
-    console.log(err, res)
-    client.end()
-  })
+  // client.query('SELECT NOW()', (err, res) => {
+  //   console.log(err, res)
+  //   client.end()
+  // })
+  var spawn = require("child_process").spawn;
+  var process = spawn('python', ['scripts/process.py', 'Chirag']);
+
+  process.stdout.on('data', function(chunk) {
+
+    var textChunk = chunk.toString('utf8'); // buffer to string
+    console.log(textChunk);
+
+  });
 
   res.render('result', {
     car: "BMW"
