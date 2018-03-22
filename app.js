@@ -26,6 +26,12 @@ app.disable('x-powered-by');
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
 
+// Body parser code
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
 // Start the server
 app.listen(app.get('port'), function() {
   console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate');
@@ -45,6 +51,7 @@ app.post('/showcar', function(req, res) {
   //   console.log(err, res)
   //   client.end()
   // })
+  console.log(req.body.trait);
   var spawn = require("child_process").spawn;
   var process = spawn('python', ['scripts/process.py', 'Chirag']);
 
