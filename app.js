@@ -48,31 +48,46 @@ app.get('/', function(req, res) {
 // Get the result from Database
 app.post('/showcar', function(req, res) {
 
-  // console.log(JSON.stringify(req.body));
+  // Get a unique identifier for each form input data
   var uuid = (new Date()).getTime();
   var fileName = "inquiry/" + uuid + ".json";
+
+  // Write a file containing the input from user
   fs.writeFile(fileName, JSON.stringify(req.body), function(err) {
     if (err) {
       console.log(err);
     } else {
+      // If data successfully written, call the python script to process the
+      // input
       var process = spawn('python3', ['scripts/process.py', fileName]);
       process.stdout.on('data', function(chunk) {
-        var textChunk = chunk.toString('utf8'); // buffer to string
-        console.log(textChunk);
+        var execStatus = chunk.toString('utf8');
+        console.log(execStatus);
+        if (execStatus == "success") {
+          // Read the result that will be stored in _result file
+          fs.readFile("inquiry/" + uuid + "_result.json", function(err, data) {
+            if (err) {
+              console.log(err);
+            } else {
+              // Get the reviews from the database for that car
+
+              // client.connect()
+              //
+              // client.query('SELECT review_text from reviews where car_make =\'audi\'', (err, res) => {
+              //   console.log(err, res)
+              //   client.end()
+              //     .then(() => console.log('client has disconnected'))
+              //     .catch(err => console.error('error during disconnection', err.stack))
+              // })
+
+              // Render the result
+              res.render('result', {
+                car: data
+              });
+            }
+          });
+        }
       });
     }
-  });
-
-  // client.connect()
-  //
-  // client.query('SELECT review_text from reviews where car_make =\'audi\'', (err, res) => {
-  //   console.log(err, res)
-  //   client.end()
-  //     .then(() => console.log('client has disconnected'))
-  //     .catch(err => console.error('error during disconnection', err.stack))
-  // })
-
-  res.render('result', {
-    car: "BMW"
   });
 })

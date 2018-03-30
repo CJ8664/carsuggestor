@@ -13,11 +13,11 @@ def main():
         inputData = json.loads(fileHandle.read())
 
     # Do the Processing
-    inputFile = sys.argv[1].split('.')[0] + '_result.json'
-    with open(ouputFile, 'r') as fileHandle:
-        inputData = json.loads(fileHandle.read())
+    outputFile = sys.argv[1].split('.')[0] + '_result.json'
+    with open(outputFile, 'w') as fileHandle:
+        fileHandle.write('result')
 
-    print(inputData)
+    print('Result process for {}'.format(inputFile))
     sys.stdout.flush()
 
 if __name__ == '__main__':
