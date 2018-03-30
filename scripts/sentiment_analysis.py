@@ -46,7 +46,7 @@ def analyzeSentiment(folderNum):
             with open(reviewPath) as fileHandle:
                 reviewText = fileHandle.read()
                 reviewText = reviewText.replace('\'', '')
-                reviewBlob = TextBlob(reviewText, classifier=None)
+                reviewBlob = TextBlob(reviewText)
                 reviewPolarity = reviewBlob.sentiment.polarity
                 reviewSubjectivity = reviewBlob.sentiment.subjectivity
                 insertQry = """INSERT INTO reviews2 (car_make, car_model,

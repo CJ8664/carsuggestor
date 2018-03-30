@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var {
   Client
 } = require('pg')
+var fs = require('fs');
+var spawn = require("child_process").spawn;
 
 const client = new Client({
   user: 'chiragjain',
@@ -18,6 +20,7 @@ const client = new Client({
 handlebars = handlebars.create({
   defaultLayout: 'main'
 });
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -37,8 +40,6 @@ app.listen(app.get('port'), function() {
   console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate');
 });
 
-client.connect()
-
 // Show the form
 app.get('/', function(req, res) {
   res.render('index');
@@ -47,26 +48,31 @@ app.get('/', function(req, res) {
 // Get the result from Database
 app.post('/showcar', function(req, res) {
 
-  // client.query('SELECT NOW()', (err, res) => {
+  // console.log(JSON.stringify(req.body));
+  var uuid = (new Date()).getTime();
+  var fileName = "inquiry/" + uuid + ".json";
+  fs.writeFile(fileName, JSON.stringify(req.body), function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      var process = spawn('python3', ['scripts/process.py', fileName]);
+      process.stdout.on('data', function(chunk) {
+        var textChunk = chunk.toString('utf8'); // buffer to string
+        console.log(textChunk);
+      });
+    }
+  });
+
+  // client.connect()
+  //
+  // client.query('SELECT review_text from reviews where car_make =\'audi\'', (err, res) => {
   //   console.log(err, res)
   //   client.end()
+  //     .then(() => console.log('client has disconnected'))
+  //     .catch(err => console.error('error during disconnection', err.stack))
   // })
-  console.log(req.body.trait);
-  var spawn = require("child_process").spawn;
-  var process = spawn('python', ['scripts/process.py', 'Chirag']);
-
-  process.stdout.on('data', function(chunk) {
-
-    var textChunk = chunk.toString('utf8'); // buffer to string
-    console.log(textChunk);
-
-  });
 
   res.render('result', {
     car: "BMW"
   });
 })
-
-// client.end()
-//   .then(() => console.log('client has disconnected'))
-//   .catch(err => console.error('error during disconnection', err.stack))
