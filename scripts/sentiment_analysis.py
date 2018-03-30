@@ -1,9 +1,10 @@
+#!/usr/local/bin/python3
+
 """Script to do sentiment analysis on review in multithreading."""
 
 import os
 import psycopg2 as pg
 import threading
-
 
 from textblob import TextBlob
 from time import time
@@ -20,21 +21,28 @@ port = '5432'
 reviewsCount = 0.0
 processedReviews = 0
 
-conn = pg.connect(database=db, user=usr, password=pasw, host=host, port=port)
+conn = None
 cur = None
 
 
-def analyzeSentiment():
+def analyzeSentiment(folderNum):
     """Get the review and perform sentiment analysis."""
     while True:
+
         carMake, carModel, reviewPath = getReview()
-        # print(carMake, carModel, reviewPath)
+
         if type(carMake) != Exception and carMake is not None:
-            # carModel = '-'.join(carModel) keep for Chirag
-            if reviewPath == '' or reviewPath[-1] == '0':
+
+            if folderNum == 0:
+                carModel = '-'.join(carModel)
+            else:
+                carModel = carModel[0]
+
+            if folderNum == 2 and (reviewPath == '' or reviewPath[-1] == '0'):
                 continue
-            carModel = carModel[0]
+
             carMake, carModel = carMake.lower(), carMake.lower()
+
             with open(reviewPath) as fileHandle:
                 reviewText = fileHandle.read()
                 reviewText = reviewText.replace('\'', '')
@@ -61,12 +69,11 @@ def getReview():
     try:
         if processedReviews < reviewsCount:
             reviewPath = reviews.pop().split('/')
-            carInfo = reviewPath[7].split('_')
+            carInfo = reviewPath[3].split('_')
             carMake = carInfo[0]
             carModel = carInfo[1]
             processedReviews += 1
-            # print('Progress: {}'
-            #       .format(round(processedReviews*100/reviewsCount, 2)))
+
             if processedReviews % 100 == 0:
                 conn.commit()
             return carMake, carModel, '/'.join(reviewPath)
@@ -78,15 +85,17 @@ def getReview():
         threadLock.release()
 
 
-def main():
+def process(folderNum=0):
     """Get the list of review files and creates threads to process them."""
     global cur
     global reviews
     global reviewsCount
+    global processedReviews
 
-    # dataDir = '/Users/chiragjain/Documents/DDDM/project/data1' Josh
-    # dataDir = '/Users/chiragjain/Documents/DDDM/project/data' Chirag
-    dataDir = '/Users/chiragjain/Documents/DDDM/project/data2'
+    reviewsCount = 0.0
+    processedReviews = 0
+
+    dataDir = '../data/{}'.format(folderNum)
 
     for dir in os.listdir(dataDir):
         if dir != '.DS_Store':
@@ -96,7 +105,7 @@ def main():
     reviewsCount = len(reviews)
     print('Total reviews: {}'.format(reviewsCount))
 
-    threadCount = 20
+    threadCount = 2
     threads = []
 
     cur = conn.cursor()
@@ -104,7 +113,8 @@ def main():
     startTime = time()
 
     for idx in range(threadCount):
-        currThread = threading.Thread(target=analyzeSentiment)
+        currThread = threading.Thread(target=analyzeSentiment,
+                                      args=(folderNum, ))
         threads += currThread,
         currThread.start()
         currThread.join()
@@ -114,6 +124,19 @@ def main():
     print('Total time taken: {}'.format(endTime-startTime))
 
     conn.commit()
+
+
+def main():
+    """Process the reviews for three different website."""
+    global conn
+
+    conn = pg.connect(database=db, user=usr, password=pasw, host=host,
+                      port=port)
+
+    for folder in range(3):
+        print('Processing folder #{}'.format(folder))
+        process(folder)
+
     conn.close()
 
 if __name__ == '__main__':
