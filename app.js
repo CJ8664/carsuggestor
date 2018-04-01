@@ -81,9 +81,9 @@ app.post('/showcar', function(req, res) {
               // Get the reviews from the database for that car
 
               var positiveQry = "SELECT review_text from reviews where car_make = '" +
-                                data + "' order by review_polarity desc LIMIT 10"
+                data + "' order by review_polarity desc LIMIT 10"
               var negativeQry = "SELECT review_text from reviews where car_make = '" +
-                                data + "' order by review_polarity LIMIT 10"
+                data + "' order by review_polarity LIMIT 10"
 
               var posReviews = [];
               var negReviews = [];
@@ -93,17 +93,17 @@ app.post('/showcar', function(req, res) {
               client.connect();
 
               client.query(positiveQry, (err, result) => {
-                result.rows.forEach(function(value){
+                result.rows.forEach(function(value) {
                   posReviews.push(value.review_text);
                 });
               })
               client.query(negativeQry, (err, result) => {
-                result.rows.forEach(function(value){
+                result.rows.forEach(function(value) {
                   negReviews.push(value.review_text);
                 });
               })
 
-              function sleep (time) {
+              function sleep(time) {
                 return new Promise((resolve) => setTimeout(resolve, time));
               }
 
@@ -126,10 +126,16 @@ app.post('/showcar', function(req, res) {
 
 // Save the result
 app.post('/save', function(req, res) {
-  if(req.body.happy == 'yes') {
-    //req.session.uuid
+  if (req.body.happy == 'yes') {
+    fs.rename("inquiry/" + req.session.uuid + ".json", "correct/" +
+      req.session.uuid + ".json");
+    fs.rename("inquiry/" + req.session.uuid + "_result.json", "correct/" +
+      req.session.uuid + "_result.json");
   } else {
-
+    fs.rename("inquiry/" + req.session.uuid + ".json", "incorrect/" +
+      req.session.uuid + ".json");
+    fs.rename("inquiry/" + req.session.uuid + "_result.json", "incorrect/" +
+      req.session.uuid + "_result.json");
   }
   res.render('thankyou');
 })
