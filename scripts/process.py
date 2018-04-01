@@ -15,9 +15,9 @@ def main():
     # Do the Processing
     outputFile = sys.argv[1].split('.')[0] + '_result.json'
     with open(outputFile, 'w') as fileHandle:
-        fileHandle.write('result')
+        fileHandle.write('audi')
 
-    print('Result process for {}'.format(inputFile))
+    print('SUCCESS: Result process for {}'.format(inputFile))
     sys.stdout.flush()
 
 if __name__ == '__main__':

@@ -7,6 +7,7 @@ var {
 } = require('pg')
 var fs = require('fs');
 var spawn = require("child_process").spawn;
+var session = require('express-session');
 
 const client = new Client({
   user: 'chiragjain',
@@ -35,6 +36,13 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// Session related for tracking logins
+app.use(session({
+  secret: 'CARS',
+  resave: true,
+  saveUninitialized: false
+}));
+
 // Start the server
 app.listen(app.get('port'), function() {
   console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate');
@@ -50,6 +58,7 @@ app.post('/showcar', function(req, res) {
 
   // Get a unique identifier for each form input data
   var uuid = (new Date()).getTime();
+  req.session.uuid = uuid;
   var fileName = "inquiry/" + uuid + ".json";
 
   // Write a file containing the input from user
@@ -63,7 +72,7 @@ app.post('/showcar', function(req, res) {
       process.stdout.on('data', function(chunk) {
         var execStatus = chunk.toString('utf8');
         console.log(execStatus);
-        if (execStatus == "success") {
+        if (execStatus.startsWith('SUCCESS')) {
           // Read the result that will be stored in _result file
           fs.readFile("inquiry/" + uuid + "_result.json", function(err, data) {
             if (err) {
@@ -71,23 +80,41 @@ app.post('/showcar', function(req, res) {
             } else {
               // Get the reviews from the database for that car
 
-              // client.connect()
-              //
-              // client.query('SELECT review_text from reviews where car_make =\'audi\'', (err, res) => {
-              //   console.log(err, res)
-              //   client.end()
-              //     .then(() => console.log('client has disconnected'))
-              //     .catch(err => console.error('error during disconnection', err.stack))
-              // })
+              var positiveQry = "SELECT review_text from reviews where car_make = '" +
+                                data + "' order by review_polarity desc LIMIT 10"
+              var negativeQry = "SELECT review_text from reviews where car_make = '" +
+                                data + "' order by review_polarity LIMIT 10"
 
-              // Render the result
-              res.render('result', {
-                car: data
-              });
+              var posReviews = [];
+              var negReviews = [];
+
+              client.connect();
+              client.query(positiveQry, (err, result) => {
+                result.rows.forEach(function(value){
+                  posReviews.push(value.review_text);
+                });
+                // Render the result
+                res.render('result', {
+                  car: data,
+                  positive: posReviews,
+                  negative: ['xyx']
+                });
+
+              })
             }
           });
         }
       });
     }
   });
+})
+
+// Save the result
+app.post('/save', function(req, res) {
+  if(req.body.happy == 'yes') {
+    //req.session.uuid
+  } else {
+
+  }
+  res.render('thankyou');
 })
