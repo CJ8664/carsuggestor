@@ -8,6 +8,7 @@ var {
 var fs = require('fs');
 var spawn = require("child_process").spawn;
 var session = require('express-session');
+const delay = require('delay');
 
 const client = new Client({
   user: 'chiragjain',
@@ -71,7 +72,6 @@ app.post('/showcar', function(req, res) {
       var process = spawn('python3', ['scripts/process.py', fileName]);
       process.stdout.on('data', function(chunk) {
         var execStatus = chunk.toString('utf8');
-        console.log(execStatus);
         if (execStatus.startsWith('SUCCESS')) {
           // Read the result that will be stored in _result file
           fs.readFile("inquiry/" + uuid + "_result.json", function(err, data) {
@@ -88,18 +88,33 @@ app.post('/showcar', function(req, res) {
               var posReviews = [];
               var negReviews = [];
 
+              var posQryDone = false;
+
               client.connect();
+
               client.query(positiveQry, (err, result) => {
                 result.rows.forEach(function(value){
                   posReviews.push(value.review_text);
                 });
+              })
+              client.query(negativeQry, (err, result) => {
+                result.rows.forEach(function(value){
+                  negReviews.push(value.review_text);
+                });
+              })
+
+              function sleep (time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+              }
+
+              sleep(3000).then(() => {
                 // Render the result
                 res.render('result', {
                   car: data,
                   positive: posReviews,
-                  negative: ['xyx']
+                  negative: negReviews
                 });
-
+                client.end();
               })
             }
           });

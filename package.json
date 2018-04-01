@@ -18,6 +18,7 @@
   "homepage": "https://github.com/CJ8664/carsuggestor#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "delay": "^2.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
