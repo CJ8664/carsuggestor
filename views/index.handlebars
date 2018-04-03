@@ -3,6 +3,23 @@
 <head>
 </head>
 
+<select>
+    {{#select CurrentSort}}
+    <option value="1">Most Recent First</option>
+    <option value="2">Most Recent Last</option>
+    <option value="3">Highest Score First</option>
+    <option value="4">Highest Score Last</option>
+    <option value="5">Most Comments</option>
+    <option value="6">Fewest Comments</option>
+    <option value="7">Most Helpful Votes</option>
+    <option value="8">Fewest Helpful Votes</option>
+    {{/select}}
+</select>
+
+<!--		<p style="float: left; font-size: 9pt; text-align: center; margin-right: 1%; margin-bottom: 0.5em;">
+		<img src="img/adventurous.jpg" height="200" width="200" onclick="q11clickPic(0);">Adventurous/Outdoorsy</p>
+-->
+
 <div class="row">
   <form class="col s12" method="post">
     <div class="row">
@@ -19,50 +36,277 @@
       </div>
     </div>
   </form>
-<!--    <div class="row">
-      <div class="col s6">
-        Which of these traits describe you? Rank them from 1-7, 1 being the most like you.
-        <label for="unique"></label>
-        <input id="unique" type="radio" name="trait" value="unique"/>
-         <label for="adv"><img src="img/adventurous.jpg">Adventurous/Outdoorsy</label>
-        <input id="adv" type="radio" name="trait" value="adv"/>
-      </div>
-    </div>	-->
     <form>
-    	<script type="text/javascript">
-    	function test(trait)
-    	{
-    		alert(trait);
-    	}
+    	<div style="text-align:center;">
+		<h2 class="question"><b>1. Which of these traits describe you? Rank them from 1-7, 1 being the most like you.</b></h2>
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q11clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q11clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q11clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q11clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q11clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q11clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q11clickPic(6);">
+		<h2 align="center"><span id="q11text"></span></h2>
+		</div>
+
+		<script>
+		var q11output = document.getElementById("q11text");
+		var value;
+		q11output.innerHTML = "Pick Your First Choice";
+		
+		function q11clickPic(value) {
+		  if (value == 0) {
+		    q11output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q11output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q11output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q11output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q11output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q11output.innerHTML = "Classy";
+		  } else {
+		  	q11output.innerHTML = "Practical";
+		  }
+		  update();
+		}
 		</script>
-	    <h2 class="question"><b>1. Which of these traits describe you? Rank them from 1-7, 1 being the most like you.</b></h2>
-		<ul class="answers">
-			<input type="image" width="100" height="100" name="q1" id="q1a" src="img/adventurous.jpg" onclick="test('Adventurous/Outdoorsy');"/></br>
-				<label for="q1a">Adventurous/Outdoorsy</label></br></br>
-			<input type="image" width="100" height="100" name="q1" id="q1b" src="img/unique.jpg" onclick="test('Unique');"/></br>
-				<label for="q1b">Unique</label><br/></br>
-			<input type="image" width="100" height="100" name="q1" id="q1c" src="img/powerful.jpg" onclick="test('Powerful');"/></br>
-				<label for="q1c">Powerful</label><br/></br>
-			<input type="image" width="100" height="100" name="q1" id="q1d" src="img/intellectual.jpg" onclick="test('Intellectual');"/></br>
-				<label for="q1d">Intellectual/Tech-Savvy</label><br/></br>
-			<input type="image" width="100" height="100" name="q1" id="q1e" src="img/social.jpg" onclick="test('Socialite');"/></br>
-				<label for="q1e">Socialite</label><br/></br>
-			<input type="image" width="100" height="100" name="q1" id="q1f" src="img/classy.jpg" onclick="test('Classy');"/></br>
-				<label for="q1f">Classy</label><br/></br>
-			<input type="image" width="100" height="100" name="q1" id="q1g" src="img/practical.jpg" onclick="test('Practical');"/></br>
-				<label for="q1g">Practical</label><br/><br/><br/>
-		</ul>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q12clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q12clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q12clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q12clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q12clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q12clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q12clickPic(6);">
+		<h2 align="center"><span id="q12text"></span></h2>
+		</div>
+
+		<script>
+		var q12output = document.getElementById("q12text");
+		var value;
+		q12output.innerHTML = "Pick Your Second Choice";
+		
+		function q12clickPic(value) {
+		  if (value == 0) {
+		    q12output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q12output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q12output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q12output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q12output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q12output.innerHTML = "Classy";
+		  } else {
+		  	q12output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q13clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q13clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q13clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q13clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q13clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q13clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q13clickPic(6);">
+		<h2 align="center"><span id="q13text"></span></h2>
+		</div>
+
+		<script>
+		var q13output = document.getElementById("q13text");
+		var value;
+		q13output.innerHTML = "Pick Your Third Choice";
+		
+		function q13clickPic(value) {
+		  if (value == 0) {
+		    q13output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q13output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q13output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q13output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q13output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q13output.innerHTML = "Classy";
+		  } else {
+		  	q13output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q14clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q14clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q14clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q14clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q14clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q14clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q14clickPic(6);">
+		<h2 align="center"><span id="q14text"></span></h2>
+		</div>
+
+		<script>
+		var q14output = document.getElementById("q14text");
+		var value;
+		q14output.innerHTML = "Pick Your Fourth Choice";
+		
+		function q14clickPic(value) {
+		  if (value == 0) {
+		    q14output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q14output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q14output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q14output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q14output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q14output.innerHTML = "Classy";
+		  } else {
+		  	q14output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q15clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q15clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q15clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q15clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q15clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q15clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q15clickPic(6);">
+		<h2 align="center"><span id="q15text"></span></h2>
+		</div>
+
+		<script>
+		var q15output = document.getElementById("q15text");
+		var value;
+		q15output.innerHTML = "Pick Your Fifth Choice";
+		
+		function q15clickPic(value) {
+		  if (value == 0) {
+		    q15output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q15output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q15output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q15output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q15output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q15output.innerHTML = "Classy";
+		  } else {
+		  	q15output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q16clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q16clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q16clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q16clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q16clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q16clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q16clickPic(6);">
+		<h2 align="center"><span id="q16text"></span></h2>
+		</div>
+
+		<script>
+		var q16output = document.getElementById("q16text");
+		var value;
+		q16output.innerHTML = "Pick Your Sixth Choice";
+		
+		function q16clickPic(value) {
+		  if (value == 0) {
+		    q16output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q16output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q16output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q16output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q16output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q16output.innerHTML = "Classy";
+		  } else {
+		  	q16output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
+		
+		<div style="text-align:center;">
+		<img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q17clickPic(0);">
+		<img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q17clickPic(1);">
+		<img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q17clickPic(2);">
+		<img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q17clickPic(3);">
+		<img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q17clickPic(4);">
+		<img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q17clickPic(5);">
+		<img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q17clickPic(6);">
+		<h2 align="center"><span id="q17text"></span></h2>
+		</div>
+
+		<script>
+		var q17output = document.getElementById("q17text");
+		var value;
+		q17output.innerHTML = "Pick Your Seventh Choice";
+		
+		function q17clickPic(value) {
+		  if (value == 0) {
+		    q17output.innerHTML = "Adventurous/Outdoorsy";
+		  } else if (value == 1) {
+		    q17output.innerHTML = "Unique";
+		  } else if (value == 2) {
+		  	q17output.innerHTML = "Powerful";
+		  } else if (value == 3) {
+		    q17output.innerHTML = "Intellectual/Tech-Savvy";
+		  } else if (value == 4) {
+		  	q17output.innerHTML = "Socialite";
+	  	  } else if (value == 5) {
+		  	q17output.innerHTML = "Classy";
+		  } else {
+		  	q17output.innerHTML = "Practical";
+		  }
+		  update();
+		}
+		</script>
+		<br/><br/><br/>
 		
 		<div style="text-align:center;">		
-		<h2 class="question"><b>2. How much are you willing to spend on a new car?</b></h2>
-		<div class="slidecontainer">
-  			<input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q2">
-  			<img style="display:inline-block;" hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="clickPic(0);">
-  			<img style="display:inline-block;" hspace="70" src="img/some money.jpg" height="150" width="150" onclick="clickPic(1);">
-  			<img style="display:inline-block;" hspace="70" src="img/more money.jpg" height="150" width="150" onclick="clickPic(2);">
-  			<img style="display:inline-block;" hspace="70" src="img/most money.jpg" height="150" width="150" onclick="clickPic(3);">
-  			<h2 align="center"><span id="q2text"></span></h2>
-		</div>
+			<h2 class="question"><b>2. How much are you willing to spend on a new car?</b></h2>
+			<div class="slidecontainer">
+	  			<input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q2">
+	  			<img style="display:inline-block;" hspace="45" src="img/pennies.jpg" height="200" width="200" onclick="clickPic(0);">
+	  			<img style="display:inline-block;" hspace="45" src="img/some money.jpg" height="200" width="200" onclick="clickPic(1);">
+	  			<img style="display:inline-block;" hspace="45" src="img/more money.jpg" height="200" width="200" onclick="clickPic(2);">
+	  			<img style="display:inline-block;" hspace="45" src="img/most money.jpg" height="200" width="200" onclick="clickPic(3);">
+	  			<h2 align="center"><span id="q2text"></span></h2>
+			</div>
 		</div>
 
 		<script>
@@ -106,10 +350,10 @@
 		<h2 class="question"><b>3. How often do you travel?</b></h2>
 		<div class="slidecontainer">
   			<input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q3">
-  			<img hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q3clickPic(0);">
-  			<img hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q3clickPic(1);">
-  			<img hspace="70" src="img/more money.jpg" height="150" width="150" onclick="q3clickPic(2);">
-  			<img hspace="70" src="img/most money.jpg" height="150" width="150" onclick="q3clickPic(3);">
+  			<img hspace="45" src="img/pennies.jpg" height="200" width="200" onclick="q3clickPic(0);">
+  			<img hspace="45" src="img/some money.jpg" height="200" width="200" onclick="q3clickPic(1);">
+  			<img hspace="45" src="img/more money.jpg" height="200" width="200" onclick="q3clickPic(2);">
+  			<img hspace="45" src="img/most money.jpg" height="200" width="200" onclick="q3clickPic(3);">
   			<h2 align="center"><span id="q3text"></span></h2>
 		</div></div>
 
@@ -152,10 +396,10 @@
 		<br/><br/><br/>
 		<div style="text-align:center;">
 		<h2 class="question"><b>4. When you do travel, where's your favorite place to go?</b></h2>
-		<img hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q4clickPic(0);">
-		<img hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q4clickPic(1);">
-		<img hspace="70" src="img/more money.jpg" height="150" width="150" onclick="q4clickPic(2);">
-		<img hspace="70" src="img/most money.jpg" height="150" width="150" onclick="q4clickPic(3);">
+		<img hspace="45" src="img/mountains.jpg" height="200" width="200" onclick="q4clickPic(0);">
+		<img hspace="45" src="img/beach.jpg" height="200" width="200" onclick="q4clickPic(1);">
+		<img hspace="45" src="img/city.jpg" height="200" width="200" onclick="q4clickPic(2);">
+		<img hspace="45" src="img/country.jpg" height="200" width="200" onclick="q4clickPic(3);">
 		<h2 align="center"><span id="q4text"></span></h2>
 		</div>
 
@@ -180,10 +424,10 @@
 		<br/><br/><br/>
 		<div style="text-align:center;">
 		<h2 class="question"><b>5. Where do you live?</b></h2>
-		<img hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q5clickPic(0);">
-		<img hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q5clickPic(1);">
-		<img hspace="70" src="img/more money.jpg" height="150" width="150" onclick="q5clickPic(2);">
-		<img hspace="70" src="img/most money.jpg" height="150" width="150" onclick="q5clickPic(3);">
+		<img hspace="45" src="img/city.jpg" height="200" width="200" onclick="q5clickPic(0);">
+		<img hspace="45" src="img/small town.jpg" height="200" width="200" onclick="q5clickPic(1);">
+		<img hspace="45" src="img/mountains.jpg" height="200" width="200" onclick="q5clickPic(2);">
+		<img hspace="45" src="img/country.jpg" height="200" width="200" onclick="q5clickPic(3);">
 		<h2 align="center"><span id="q5text"></span></h2>
 		</div>
 		
@@ -208,8 +452,8 @@
 		<br/><br/><br/>
 		<div style="text-align:center;">
 		<h2 class="question"><b>6. What’s more important to you: function or fashion?</b></h2>
-		<img style="display:inline-block;" hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q6clickPic(0);">
-		<img style="display:inline-block;" hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q6clickPic(1);">
+		<img style="display:inline-block;" hspace="70" src="img/function.jpg" height="200" width="250" onclick="q6clickPic(0);">
+		<img style="display:inline-block;" hspace="70" src="img/fashion.jpg" height="200" width="300" onclick="q6clickPic(1);">
 		<h2 align="center"><span id="q6text"></span></h2>
 		</div>
 
@@ -229,7 +473,7 @@
 		</script>
 		<br/><br/><br/>
 		<div style="text-align:center;">
-		<h2 class="question"><b>7. How How big is your current household?</b></h2>
+		<h2 class="question"><b>7. How big is your current household?</b></h2>
 		<div class="slidecontainer">
   			<input type="range" min="0" max="2" value="0" style="width:100%;height:10px;padding-left:190px;padding-right:190px" class="slider" id="q7">
 		</div>
@@ -275,8 +519,8 @@
 		<br/><br/><br/>
 		<div style="text-align:center;">
 		<h2 class="question"><b>8. Do you prefer a night at home with a few friends, or going out on the town?</b></h2>
-		<img style="display:inline-block;" hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q8clickPic(0);">
-		<img style="display:inline-block;" hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q8clickPic(1);">
+		<img style="display:inline-block;" hspace="70" src="img/chill night.jpg" height="200" width="250" onclick="q8clickPic(0);">
+		<img style="display:inline-block;" hspace="70" src="img/clubbing.jpg" height="200" width="250" onclick="q8clickPic(1);">
 		<h2 align="center"><span id="q8text"></span></h2>
 		</div>
 
@@ -299,10 +543,10 @@
 		<h2 class="question"><b>9. How environmentally conscious would you consider yourself?</b></h2>
 		<div class="slidecontainer">
   			<input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q9">
-  			<img hspace="70" src="img/pennies.jpg" height="150" width="150" onclick="q9clickPic(0);">
-  			<img hspace="70" src="img/some money.jpg" height="150" width="150" onclick="q9clickPic(1);">
-  			<img hspace="70" src="img/more money.jpg" height="150" width="150" onclick="q9clickPic(2);">
-  			<img hspace="70" src="img/most money.jpg" height="150" width="150" onclick="q9clickPic(3);">
+  			<img hspace="45" src="img/plastic in the ocean.jpg" height="200" width="200" onclick="q9clickPic(0);">
+  			<img hspace="45" src="img/recycle a little.jpg" height="200" width="180" onclick="q9clickPic(1);">
+  			<img hspace="45" src="img/recycle a lot.jpg" height="200" width="200" onclick="q9clickPic(2);">
+  			<img hspace="45" src="img/tree hugger.jpg" height="200" width="200" onclick="q9clickPic(3);">
   			<h2 align="center"><span id="q9text"></span></h2>
 		</div></div>
 
@@ -318,7 +562,7 @@
 		
 		q9slider.oninput = function() {
 		  if (this.value == 0) {
-		    q9output.innerHTML = "Not Very";
+		    q9output.innerHTML = "Not At All";
 		  } else if (this.value == 1) {
 		    q9output.innerHTML = "A Little";
 		  } else if (this.value == 2) {
@@ -331,7 +575,7 @@
 		
 		function q9changeText() {
 		  if (q9slider.value == 0) {
-		    q9output.innerHTML = "Not Very";
+		    q9output.innerHTML = "Not At All";
 		  } else if (q9slider.value == 1) {
 		    q9output.innerHTML = "A Little";
 		  } else if (q9slider.value == 2) {
@@ -344,6 +588,13 @@
 		</script>
 		<br/><br/><br/>
 		<h3 align="left">Results</h3>
+		<p>Q1-1: <span id="q11results"></span></p>
+		<p>Q1-2: <span id="q12results"></span></p>
+		<p>Q1-3: <span id="q13results"></span></p>
+		<p>Q1-4: <span id="q14results"></span></p>
+		<p>Q1-5: <span id="q15results"></span></p>
+		<p>Q1-6: <span id="q16results"></span></p>
+		<p>Q1-7: <span id="q17results"></span></p>
 		<p>Q2: <span id="q2results"></span></p>
 		<p>Q3: <span id="q3results"></span></p>
 		<p>Q4: <span id="q4results"></span></p>
@@ -353,6 +604,13 @@
 		<p>Q8: <span id="q8results"></span></p>
 		<p>Q9: <span id="q9results"></span></p>
 		<script>
+		var q11out = document.getElementById("q11results");
+		var q12out = document.getElementById("q12results");
+		var q13out = document.getElementById("q13results");
+		var q14out = document.getElementById("q14results");
+		var q15out = document.getElementById("q15results");
+		var q16out = document.getElementById("q16results");
+		var q17out = document.getElementById("q17results");
 		var q2out = document.getElementById("q2results");
 		var q3out = document.getElementById("q3results");
 		var q4out = document.getElementById("q4results");
@@ -362,6 +620,13 @@
 		var q8out = document.getElementById("q8results");
 		var q9out = document.getElementById("q9results");
 		function update() {
+		  q11out.innerHTML = q11output.innerHTML;
+		  q12out.innerHTML = q12output.innerHTML;
+		  q13out.innerHTML = q13output.innerHTML;
+		  q14out.innerHTML = q14output.innerHTML;
+		  q15out.innerHTML = q15output.innerHTML;
+		  q16out.innerHTML = q16output.innerHTML;
+		  q17out.innerHTML = q17output.innerHTML;
 		  q2out.innerHTML = q2output.innerHTML;	
 		  q3out.innerHTML = q3output.innerHTML;		
 		  q4out.innerHTML = q4output.innerHTML;			

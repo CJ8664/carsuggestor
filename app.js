@@ -16,10 +16,27 @@ const client = new Client({
 
 // Handlebar Code
 handlebars = handlebars.create({
-  defaultLayout: 'main'
+	defaultLayout: 'main',
+	helpers: {
+		select: function(selected, options) {
+		    return options.fn(this).replace(
+		            new RegExp(' value=\"' + selected + '\"'),
+		            '$& selected="selected"');
+		    }
+	}
 });
+//Handlebars = Handlebars.registerHelper("select", function(value, options) {
+//	return options.fn(this)
+//	.split('\n')
+//	.map(function(v) {
+//		var t = 'value="' + value + '"'
+//		return ! RegExp(t).test(v) ? v : v.replace(t, t + ' selected="selected"')
+//	})
+//	.join('\n')
+//})
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
+
 
 // App configuration
 app.disable('x-powered-by');
