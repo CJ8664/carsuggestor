@@ -5,6 +5,10 @@ var bodyParser = require('body-parser');
 var {
   Client
 } = require('pg')
+var fs = require('fs');
+var spawn = require("child_process").spawn;
+var session = require('express-session');
+const delay = require('delay');
 
 const client = new Client({
   user: 'chiragjain',
@@ -25,15 +29,6 @@ handlebars = handlebars.create({
 		    }
 	}
 });
-//Handlebars = Handlebars.registerHelper("select", function(value, options) {
-//	return options.fn(this)
-//	.split('\n')
-//	.map(function(v) {
-//		var t = 'value="' + value + '"'
-//		return ! RegExp(t).test(v) ? v : v.replace(t, t + ' selected="selected"')
-//	})
-//	.join('\n')
-//})
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -49,12 +44,17 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// Session related for tracking logins
+app.use(session({
+  secret: 'CARS',
+  resave: true,
+  saveUninitialized: false
+}));
+
 // Start the server
 app.listen(app.get('port'), function() {
   console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate');
 });
-
-client.connect()
 
 // Show the form
 app.get('/', function(req, res) {
@@ -64,26 +64,85 @@ app.get('/', function(req, res) {
 // Get the result from Database
 app.post('/showcar', function(req, res) {
 
-  // client.query('SELECT NOW()', (err, res) => {
-  //   console.log(err, res)
-  //   client.end()
-  // })
-  console.log(req.body.trait);
-  var spawn = require("child_process").spawn;
-  var process = spawn('python', ['scripts/process.py', 'Chirag']);
+  // Get a unique identifier for each form input data
+  var uuid = (new Date()).getTime();
+  req.session.uuid = uuid;
+  var fileName = "inquiry/" + uuid + ".json";
 
-  process.stdout.on('data', function(chunk) {
+  // Write a file containing the input from user
+  fs.writeFile(fileName, JSON.stringify(req.body), function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      // If data successfully written, call the python script to process the
+      // input
+      var process = spawn('python3', ['scripts/process.py', fileName]);
+      process.stdout.on('data', function(chunk) {
+        var execStatus = chunk.toString('utf8');
+        if (execStatus.startsWith('SUCCESS')) {
+          // Read the result that will be stored in _result file
+          fs.readFile("inquiry/" + uuid + "_result.json", function(err, data) {
+            if (err) {
+              console.log(err);
+            } else {
+              // Get the reviews from the database for that car
 
-    var textChunk = chunk.toString('utf8'); // buffer to string
-    console.log(textChunk);
+              var positiveQry = "SELECT review_text from reviews where car_make = '" +
+                data + "' order by review_polarity desc LIMIT 10"
+              var negativeQry = "SELECT review_text from reviews where car_make = '" +
+                data + "' order by review_polarity LIMIT 10"
 
-  });
+              var posReviews = [];
+              var negReviews = [];
 
-  res.render('result', {
-    car: "BMW"
+              var posQryDone = false;
+
+              client.connect();
+
+              client.query(positiveQry, (err, result) => {
+                result.rows.forEach(function(value) {
+                  posReviews.push(value.review_text);
+                });
+              })
+              client.query(negativeQry, (err, result) => {
+                result.rows.forEach(function(value) {
+                  negReviews.push(value.review_text);
+                });
+              })
+
+              function sleep(time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+              }
+
+              sleep(3000).then(() => {
+                // Render the result
+                res.render('result', {
+                  car: data,
+                  positive: posReviews,
+                  negative: negReviews
+                });
+                client.end();
+              })
+            }
+          });
+        }
+      });
+    }
   });
 })
 
-// client.end()
-//   .then(() => console.log('client has disconnected'))
-//   .catch(err => console.error('error during disconnection', err.stack))
+// Save the result
+app.post('/save', function(req, res) {
+  if (req.body.happy == 'yes') {
+    fs.rename("inquiry/" + req.session.uuid + ".json", "correct/" +
+      req.session.uuid + ".json");
+    fs.rename("inquiry/" + req.session.uuid + "_result.json", "correct/" +
+      req.session.uuid + "_result.json");
+  } else {
+    fs.rename("inquiry/" + req.session.uuid + ".json", "incorrect/" +
+      req.session.uuid + ".json");
+    fs.rename("inquiry/" + req.session.uuid + "_result.json", "incorrect/" +
+      req.session.uuid + "_result.json");
+  }
+  res.render('thankyou');
+})
