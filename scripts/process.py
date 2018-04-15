@@ -11,11 +11,11 @@ def main():
     inputFile = sys.argv[1]
     with open(inputFile, 'r') as fileHandle:
         inputData = json.loads(fileHandle.read())
-
     # Do the Processing
+    # Print statements won't work
     outputFile = sys.argv[1].split('.')[0] + '_result.json'
     with open(outputFile, 'w') as fileHandle:
-        fileHandle.write('audi')
+        fileHandle.write(inputData['q11text'])
 
     print('SUCCESS: Result process for {}'.format(inputFile))
     sys.stdout.flush()
