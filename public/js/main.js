@@ -1,167 +1,165 @@
 var q11output = document.getElementById("q11text");
-var value;
-q11output.innerHTML = "Pick Your First Choice";
+q11output.value = "Pick Your First Choice";
+var q12output = document.getElementById("q12text");
+q12output.value = "Pick Your Second Choice";
+var q13output = document.getElementById("q13text");
+q13output.value = "Pick Your Third Choice";
+var q14output = document.getElementById("q14text");
+q14output.value = "Pick Your Fourth Choice";
+var q15output = document.getElementById("q15text");
+q15output.value = "Pick Your Fifth Choice";
+var q16output = document.getElementById("q16text");
+q16output.value = "Pick Your Sixth Choice";
+var q17output = document.getElementById("q17text");
+q17output.value = "Pick Your Seventh Choice";
+var slider = document.getElementById("q2");
+var q2output = document.getElementById("q2text");
+q2output.value = "Pick An Image";
+var q3slider = document.getElementById("q3");
+var q3output = document.getElementById("q3text");
+q3output.value = "Pick An Image";
+var q4output = document.getElementById("q4text");
+q4output.value = "Pick An Image";
+var q5output = document.getElementById("q5text");
+q5output.value = "Pick An Image";
+var q6output = document.getElementById("q6text");
+q6output.value = "Pick An Image";
+var q7slider = document.getElementById("q7");
+var q7output = document.getElementById("q7text");
+q7output.value = "Select A Number";
+var q8output = document.getElementById("q8text");
+q8output.value = "Pick An Image";
+var q9slider = document.getElementById("q9");
+var q9output = document.getElementById("q9text");
+q9output.value = "Pick An Image";
 
 function q11clickPic(value) {
   if (value == 0) {
-    q11output.innerHTML = "Adventurous/Outdoorsy";
+    q11output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q11output.innerHTML = "Unique";
+    q11output.value = "Unique";
   } else if (value == 2) {
-    q11output.innerHTML = "Powerful";
+    q11output.value = "Powerful";
   } else if (value == 3) {
-    q11output.innerHTML = "Intellectual/Tech-Savvy";
+    q11output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q11output.innerHTML = "Socialite";
+    q11output.value = "Socialite";
   } else if (value == 5) {
-    q11output.innerHTML = "Classy";
+    q11output.value = "Classy";
   } else {
-    q11output.innerHTML = "Practical";
+    q11output.value = "Practical";
   }
-  update();
 }
-
-var q12output = document.getElementById("q12text");
-var value;
-q12output.innerHTML = "Pick Your Second Choice";
 
 function q12clickPic(value) {
   if (value == 0) {
-    q12output.innerHTML = "Adventurous/Outdoorsy";
+    q12output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q12output.innerHTML = "Unique";
+    q12output.value = "Unique";
   } else if (value == 2) {
-    q12output.innerHTML = "Powerful";
+    q12output.value = "Powerful";
   } else if (value == 3) {
-    q12output.innerHTML = "Intellectual/Tech-Savvy";
+    q12output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q12output.innerHTML = "Socialite";
+    q12output.value = "Socialite";
   } else if (value == 5) {
-    q12output.innerHTML = "Classy";
+    q12output.value = "Classy";
   } else {
-    q12output.innerHTML = "Practical";
+    q12output.value = "Practical";
   }
-  update();
-}
 
-var q13output = document.getElementById("q13text");
-var value;
-q13output.innerHTML = "Pick Your Third Choice";
+}
 
 function q13clickPic(value) {
   if (value == 0) {
-    q13output.innerHTML = "Adventurous/Outdoorsy";
+    q13output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q13output.innerHTML = "Unique";
+    q13output.value = "Unique";
   } else if (value == 2) {
-    q13output.innerHTML = "Powerful";
+    q13output.value = "Powerful";
   } else if (value == 3) {
-    q13output.innerHTML = "Intellectual/Tech-Savvy";
+    q13output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q13output.innerHTML = "Socialite";
+    q13output.value = "Socialite";
   } else if (value == 5) {
-    q13output.innerHTML = "Classy";
+    q13output.value = "Classy";
   } else {
-    q13output.innerHTML = "Practical";
+    q13output.value = "Practical";
   }
-  update();
 }
-
-var q14output = document.getElementById("q14text");
-var value;
-q14output.innerHTML = "Pick Your Fourth Choice";
 
 function q14clickPic(value) {
   if (value == 0) {
-    q14output.innerHTML = "Adventurous/Outdoorsy";
+    q14output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q14output.innerHTML = "Unique";
+    q14output.value = "Unique";
   } else if (value == 2) {
-    q14output.innerHTML = "Powerful";
+    q14output.value = "Powerful";
   } else if (value == 3) {
-    q14output.innerHTML = "Intellectual/Tech-Savvy";
+    q14output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q14output.innerHTML = "Socialite";
+    q14output.value = "Socialite";
   } else if (value == 5) {
-    q14output.innerHTML = "Classy";
+    q14output.value = "Classy";
   } else {
-    q14output.innerHTML = "Practical";
+    q14output.value = "Practical";
   }
-  update();
 }
-
-var q15output = document.getElementById("q15text");
-var value;
-q15output.innerHTML = "Pick Your Fifth Choice";
 
 function q15clickPic(value) {
   if (value == 0) {
-    q15output.innerHTML = "Adventurous/Outdoorsy";
+    q15output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q15output.innerHTML = "Unique";
+    q15output.value = "Unique";
   } else if (value == 2) {
-    q15output.innerHTML = "Powerful";
+    q15output.value = "Powerful";
   } else if (value == 3) {
-    q15output.innerHTML = "Intellectual/Tech-Savvy";
+    q15output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q15output.innerHTML = "Socialite";
+    q15output.value = "Socialite";
   } else if (value == 5) {
-    q15output.innerHTML = "Classy";
+    q15output.value = "Classy";
   } else {
-    q15output.innerHTML = "Practical";
+    q15output.value = "Practical";
   }
-  update();
 }
-
-var q16output = document.getElementById("q16text");
-var value;
-q16output.innerHTML = "Pick Your Sixth Choice";
 
 function q16clickPic(value) {
   if (value == 0) {
-    q16output.innerHTML = "Adventurous/Outdoorsy";
+    q16output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q16output.innerHTML = "Unique";
+    q16output.value = "Unique";
   } else if (value == 2) {
-    q16output.innerHTML = "Powerful";
+    q16output.value = "Powerful";
   } else if (value == 3) {
-    q16output.innerHTML = "Intellectual/Tech-Savvy";
+    q16output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q16output.innerHTML = "Socialite";
+    q16output.value = "Socialite";
   } else if (value == 5) {
-    q16output.innerHTML = "Classy";
+    q16output.value = "Classy";
   } else {
-    q16output.innerHTML = "Practical";
+    q16output.value = "Practical";
   }
-  update();
 }
-
-var q17output = document.getElementById("q17text");
-var value;
-q17output.innerHTML = "Pick Your Seventh Choice";
 
 function q17clickPic(value) {
   if (value == 0) {
-    q17output.innerHTML = "Adventurous/Outdoorsy";
+    q17output.value = "Adventurous/Outdoorsy";
   } else if (value == 1) {
-    q17output.innerHTML = "Unique";
+    q17output.value = "Unique";
   } else if (value == 2) {
-    q17output.innerHTML = "Powerful";
+    q17output.value = "Powerful";
   } else if (value == 3) {
-    q17output.innerHTML = "Intellectual/Tech-Savvy";
+    q17output.value = "Intellectual/Tech-Savvy";
   } else if (value == 4) {
-    q17output.innerHTML = "Socialite";
+    q17output.value = "Socialite";
   } else if (value == 5) {
-    q17output.innerHTML = "Classy";
+    q17output.value = "Classy";
   } else {
-    q17output.innerHTML = "Practical";
+    q17output.value = "Practical";
   }
-  update();
-}
 
-var slider = document.getElementById("q2");
-var q2output = document.getElementById("q2text");
-q2output.innerHTML = "Pick An Image";
+}
 
 function clickPic(num) {
   slider.value = num;
@@ -170,33 +168,27 @@ function clickPic(num) {
 
 slider.oninput = function() {
   if (this.value == 0) {
-    q2output.innerHTML = "No Money";
+    q2output.value = "No Money";
   } else if (this.value == 1) {
-    q2output.innerHTML = "Some Money";
+    q2output.value = "Some Money";
   } else if (this.value == 2) {
-    q2output.innerHTML = "More Money";
+    q2output.value = "More Money";
   } else {
-    q2output.innerHTML = "All The Money";
+    q2output.value = "All The Money";
   }
-  update();
 }
 
 function changeText() {
   if (slider.value == 0) {
-    q2output.innerHTML = "No Money";
+    q2output.value = "No Money";
   } else if (slider.value == 1) {
-    q2output.innerHTML = "Some Money";
+    q2output.value = "Some Money";
   } else if (slider.value == 2) {
-    q2output.innerHTML = "More Money";
+    q2output.value = "More Money";
   } else {
-    q2output.innerHTML = "All The Money";
+    q2output.value = "All The Money";
   }
-  update();
 }
-
-var q3slider = document.getElementById("q3");
-var q3output = document.getElementById("q3text");
-q3output.innerHTML = "Pick An Image";
 
 function q3clickPic(num) {
   q3slider.value = num;
@@ -205,80 +197,60 @@ function q3clickPic(num) {
 
 q3slider.oninput = function() {
   if (this.value == 0) {
-    q3output.innerHTML = "Very Little";
+    q3output.value = "Very Little";
   } else if (this.value == 1) {
-    q3output.innerHTML = "Some";
+    q3output.value = "Some";
   } else if (this.value == 2) {
-    q3output.innerHTML = "A Moderate Amount";
+    q3output.value = "A Moderate Amount";
   } else {
-    q3output.innerHTML = "I Live In My Car";
+    q3output.value = "I Live In My Car";
   }
-  update();
+
 }
 
 function q3changeText() {
   if (q3slider.value == 0) {
-    q3output.innerHTML = "Very Little";
+    q3output.value = "Very Little";
   } else if (q3slider.value == 1) {
-    q3output.innerHTML = "Some";
+    q3output.value = "Some";
   } else if (q3slider.value == 2) {
-    q3output.innerHTML = "A Moderate Amount";
+    q3output.value = "A Moderate Amount";
   } else {
-    q3output.innerHTML = "I Live In My Car";
+    q3output.value = "I Live In My Car";
   }
-  update();
 }
-
-var q4output = document.getElementById("q4text");
-var value;
-q4output.innerHTML = "Pick An Image";
 
 function q4clickPic(value) {
   if (value == 0) {
-    q4output.innerHTML = "Mountains";
+    q4output.value = "Mountains";
   } else if (value == 1) {
-    q4output.innerHTML = "Beach";
+    q4output.value = "Beach";
   } else if (value == 2) {
-    q4output.innerHTML = "City";
+    q4output.value = "City";
   } else {
-    q4output.innerHTML = "Countryside";
+    q4output.value = "Countryside";
   }
-  update();
 }
-
-var q5output = document.getElementById("q5text");
-var value;
-q5output.innerHTML = "Pick An Image";
 
 function q5clickPic(value) {
   if (value == 0) {
-    q5output.innerHTML = "City";
+    q5output.value = "City";
   } else if (value == 1) {
-    q5output.innerHTML = "Small Town";
+    q5output.value = "Small Town";
   } else if (value == 2) {
-    q5output.innerHTML = "Mountains";
+    q5output.value = "Mountains";
   } else {
-    q5output.innerHTML = "Countryside";
+    q5output.value = "Countryside";
   }
-  update();
 }
-
-var q6output = document.getElementById("q6text");
-var value;
-q6output.innerHTML = "Pick An Image";
 
 function q6clickPic(value) {
   if (value == 0) {
-    q6output.innerHTML = "Function";
+    q6output.value = "Function";
   } else {
-    q6output.innerHTML = "Fashion";
+    q6output.value = "Fashion";
   }
-  update();
 }
-
-var q7slider = document.getElementById("q7");
-var q7output = document.getElementById("q7text");
-q7output.innerHTML = "Select A Number";
 
 function q7clickPic(num) {
   q7slider.value = num;
@@ -287,42 +259,31 @@ function q7clickPic(num) {
 
 q7slider.oninput = function() {
   if (this.value == 0) {
-    q7output.innerHTML = "1-2";
+    q7output.value = "1-2";
   } else if (this.value == 1) {
-    q7output.innerHTML = "3-4";
+    q7output.value = "3-4";
   } else {
-    q7output.innerHTML = "5+";
+    q7output.value = "5+";
   }
-  update();
 }
 
 function q7changeText() {
   if (q7slider.value == 0) {
-    q7output.innerHTML = "1-2";
+    q7output.value = "1-2";
   } else if (q7slider.value == 1) {
-    q7output.innerHTML = "3-4";
+    q7output.value = "3-4";
   } else {
-    q7output.innerHTML = "5+";
+    q7output.value = "5+";
   }
-  update();
 }
-
-var q8output = document.getElementById("q8text");
-var value;
-q8output.innerHTML = "Pick An Image";
 
 function q8clickPic(value) {
   if (value == 0) {
-    q8output.innerHTML = "Night At Home";
+    q8output.value = "Night At Home";
   } else {
-    q8output.innerHTML = "Out On The Town";
+    q8output.value = "Out On The Town";
   }
-  update();
 }
-
-var q9slider = document.getElementById("q9");
-var q9output = document.getElementById("q9text");
-q9output.innerHTML = "Pick An Image";
 
 function q9clickPic(num) {
   q9slider.value = num;
@@ -331,60 +292,24 @@ function q9clickPic(num) {
 
 q9slider.oninput = function() {
   if (this.value == 0) {
-    q9output.innerHTML = "Not At All";
+    q9output.value = "Not At All";
   } else if (this.value == 1) {
-    q9output.innerHTML = "A Little";
+    q9output.value = "A Little";
   } else if (this.value == 2) {
-    q9output.innerHTML = "Above Average";
+    q9output.value = "Above Average";
   } else {
-    q9output.innerHTML = "I Hug Trees";
+    q9output.value = "I Hug Trees";
   }
-  update();
 }
 
 function q9changeText() {
   if (q9slider.value == 0) {
-    q9output.innerHTML = "Not At All";
+    q9output.value = "Not At All";
   } else if (q9slider.value == 1) {
-    q9output.innerHTML = "A Little";
+    q9output.value = "A Little";
   } else if (q9slider.value == 2) {
-    q9output.innerHTML = "Above Average";
+    q9output.value = "Above Average";
   } else {
-    q9output.innerHTML = "I Hug Trees";
+    q9output.value = "I Hug Trees";
   }
-  update();
-}
-
-var q11out = document.getElementById("q11results");
-var q12out = document.getElementById("q12results");
-var q13out = document.getElementById("q13results");
-var q14out = document.getElementById("q14results");
-var q15out = document.getElementById("q15results");
-var q16out = document.getElementById("q16results");
-var q17out = document.getElementById("q17results");
-var q2out = document.getElementById("q2results");
-var q3out = document.getElementById("q3results");
-var q4out = document.getElementById("q4results");
-var q5out = document.getElementById("q5results");
-var q6out = document.getElementById("q6results");
-var q7out = document.getElementById("q7results");
-var q8out = document.getElementById("q8results");
-var q9out = document.getElementById("q9results");
-
-function update() {
-  q11out.innerHTML = q11output.innerHTML;
-  q12out.innerHTML = q12output.innerHTML;
-  q13out.innerHTML = q13output.innerHTML;
-  q14out.innerHTML = q14output.innerHTML;
-  q15out.innerHTML = q15output.innerHTML;
-  q16out.innerHTML = q16output.innerHTML;
-  q17out.innerHTML = q17output.innerHTML;
-  q2out.innerHTML = q2output.innerHTML;
-  q3out.innerHTML = q3output.innerHTML;
-  q4out.innerHTML = q4output.innerHTML;
-  q5out.innerHTML = q5output.innerHTML;
-  q6out.innerHTML = q6output.innerHTML;
-  q7out.innerHTML = q7output.innerHTML;
-  q8out.innerHTML = q8output.innerHTML;
-  q9out.innerHTML = q9output.innerHTML;
 }
