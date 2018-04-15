@@ -1,155 +1,120 @@
-<select>
-    <option value="1">Most Recent First</option>
-    <option value="2">Most Recent Last</option>
-    <option value="3">Highest Score First</option>
-    <option value="4">Highest Score Last</option>
-    <option value="5">Most Comments</option>
-    <option value="6">Fewest Comments</option>
-    <option value="7">Most Helpful Votes</option>
-    <option value="8">Fewest Helpful Votes</option>
-</select>
-
 <div class="row">
-  <form class="col s12" method="post">
+  <form class="col s12" method="post" action="/showcar">
     <div style="text-align:center;">
       <h2 class="question"><b>1. Which of these traits describe you? Rank them from 1-7, 1 being the most like you.</b></h2>
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q11clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q11clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q11clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q11clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q11clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q11clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q11clickPic(6);">
-      <h2 align="center"><span id="q11text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q11clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q11clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q11clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q11clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q11clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q11clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q11clickPic(6);">
+      <input type="text" name="q11text" id="q11text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q12clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q12clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q12clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q12clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q12clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q12clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q12clickPic(6);">
-      <h2 align="center"><span id="q12text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q12clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q12clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q12clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q12clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q12clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q12clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q12clickPic(6);">
+      <input type="text" name="q12text" id="q12text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q13clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q13clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q13clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q13clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q13clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q13clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q13clickPic(6);">
-      <h2 align="center"><span id="q13text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q13clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q13clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q13clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q13clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q13clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q13clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q13clickPic(6);">
+      <input type="text" name="q13text" id="q13text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q14clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q14clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q14clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q14clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q14clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q14clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q14clickPic(6);">
-      <h2 align="center"><span id="q14text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q14clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q14clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q14clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q14clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q14clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q14clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q14clickPic(6);">
+      <input type="text" name="q14text" id="q14text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q15clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q15clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q15clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q15clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q15clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q15clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q15clickPic(6);">
-      <h2 align="center"><span id="q15text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q15clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q15clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q15clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q15clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q15clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q15clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q15clickPic(6);">
+      <input type="text" name="q15text" id="q15text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q16clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q16clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q16clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q16clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q16clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q16clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q16clickPic(6);">
-      <h2 align="center"><span id="q16text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q16clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q16clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q16clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q16clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q16clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q16clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q16clickPic(6);">
+      <input type="text" name="q16text" id="q16text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
-      <img hspace="45" src="img/adventurous.jpg" height="200" width="200" onclick="q17clickPic(0);">
-      <img hspace="45" src="img/unique.jpg" height="200" width="200" onclick="q17clickPic(1);">
-      <img hspace="45" src="img/powerful.jpg" height="200" width="200" onclick="q17clickPic(2);">
-      <img hspace="45" src="img/intellectual.jpg" height="200" width="200" onclick="q17clickPic(3);">
-      <img hspace="45" src="img/social.jpg" height="200" width="200" onclick="q17clickPic(4);">
-      <img hspace="45" src="img/classy.jpg" height="200" width="200" onclick="q17clickPic(5);">
-      <img hspace="45" src="img/practical.jpg" height="200" width="200" onclick="q17clickPic(6);">
-      <h2 align="center"><span id="q17text"></span></h2>
+      <img src="img/adventurous.jpg" height="155" width="155" onclick="q17clickPic(0);">
+      <img src="img/unique.jpg" height="155" width="155" onclick="q17clickPic(1);">
+      <img src="img/powerful.jpg" height="155" width="155" onclick="q17clickPic(2);">
+      <img src="img/intellectual.jpg" height="155" width="155" onclick="q17clickPic(3);">
+      <img src="img/social.jpg" height="155" width="155" onclick="q17clickPic(4);">
+      <img src="img/classy.jpg" height="155" width="155" onclick="q17clickPic(5);">
+      <img src="img/practical.jpg" height="155" width="155" onclick="q17clickPic(6);">
+      <input type="text" name="q17text" id="q17text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>2. How much are you willing to spend on a new car?</b></h2>
       <div class="slidecontainer">
         <input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q2">
-        <img style="display:inline-block;" hspace="45" src="img/pennies.jpg" height="200" width="200" onclick="clickPic(0);">
-        <img style="display:inline-block;" hspace="45" src="img/some money.jpg" height="200" width="200" onclick="clickPic(1);">
-        <img style="display:inline-block;" hspace="45" src="img/more money.jpg" height="200" width="200" onclick="clickPic(2);">
-        <img style="display:inline-block;" hspace="45" src="img/most money.jpg" height="200" width="200" onclick="clickPic(3);">
-        <h2 align="center"><span id="q2text"></span></h2>
+        <img style="display:inline-block;" src="img/pennies.jpg" height="155" width="155" onclick="clickPic(0);">
+        <img style="display:inline-block;" src="img/some money.jpg" height="155" width="155" onclick="clickPic(1);">
+        <img style="display:inline-block;" src="img/more money.jpg" height="155" width="155" onclick="clickPic(2);">
+        <img style="display:inline-block;" src="img/most money.jpg" height="155" width="155" onclick="clickPic(3);">
+        <input type="text" name="q2text" id="q2text">
       </div>
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>3. How often do you travel?</b></h2>
       <div class="slidecontainer">
         <input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q3">
-        <img hspace="45" src="img/pennies.jpg" height="200" width="200" onclick="q3clickPic(0);">
-        <img hspace="45" src="img/some money.jpg" height="200" width="200" onclick="q3clickPic(1);">
-        <img hspace="45" src="img/more money.jpg" height="200" width="200" onclick="q3clickPic(2);">
-        <img hspace="45" src="img/most money.jpg" height="200" width="200" onclick="q3clickPic(3);">
-        <h2 align="center"><span id="q3text"></span></h2>
+        <img src="img/pennies.jpg" height="155" width="155" onclick="q3clickPic(0);">
+        <img src="img/some money.jpg" height="155" width="155" onclick="q3clickPic(1);">
+        <img src="img/more money.jpg" height="155" width="155" onclick="q3clickPic(2);">
+        <img src="img/most money.jpg" height="155" width="155" onclick="q3clickPic(3);">
+        <input type="text" name="q3text" id="q3text">
       </div>
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>4. When you do travel, where's your favorite place to go?</b></h2>
-      <img hspace="45" src="img/mountains.jpg" height="200" width="200" onclick="q4clickPic(0);">
-      <img hspace="45" src="img/beach.jpg" height="200" width="200" onclick="q4clickPic(1);">
-      <img hspace="45" src="img/city.jpg" height="200" width="200" onclick="q4clickPic(2);">
-      <img hspace="45" src="img/country.jpg" height="200" width="200" onclick="q4clickPic(3);">
-      <h2 align="center"><span id="q4text"></span></h2>
+      <img src="img/mountains.jpg" height="155" width="155" onclick="q4clickPic(0);">
+      <img src="img/beach.jpg" height="155" width="155" onclick="q4clickPic(1);">
+      <img src="img/city.jpg" height="155" width="155" onclick="q4clickPic(2);">
+      <img src="img/country.jpg" height="155" width="155" onclick="q4clickPic(3);">
+      <input type="text" name="q4text" id="q4text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>5. Where do you live?</b></h2>
-      <img hspace="45" src="img/city.jpg" height="200" width="200" onclick="q5clickPic(0);">
-      <img hspace="45" src="img/small town.jpg" height="200" width="200" onclick="q5clickPic(1);">
-      <img hspace="45" src="img/mountains.jpg" height="200" width="200" onclick="q5clickPic(2);">
-      <img hspace="45" src="img/country.jpg" height="200" width="200" onclick="q5clickPic(3);">
-      <h2 align="center"><span id="q5text"></span></h2>
+      <img src="img/city.jpg" height="155" width="155" onclick="q5clickPic(0);">
+      <img src="img/small town.jpg" height="155" width="155" onclick="q5clickPic(1);">
+      <img src="img/mountains.jpg" height="155" width="155" onclick="q5clickPic(2);">
+      <img src="img/country.jpg" height="155" width="155" onclick="q5clickPic(3);">
+      <input type="text" name="q5text" id="q5text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>6. What's more important to you: function or fashion?</b></h2>
-      <img style="display:inline-block;" hspace="70" src="img/function.jpg" height="200" width="250" onclick="q6clickPic(0);">
-      <img style="display:inline-block;" hspace="70" src="img/fashion.jpg" height="200" width="300" onclick="q6clickPic(1);">
-      <h2 align="center"><span id="q6text"></span></h2>
+      <img style="display:inline-block;" hspace="70" src="img/function.jpg" height="155" width="250" onclick="q6clickPic(0);">
+      <img style="display:inline-block;" hspace="70" src="img/fashion.jpg" height="155" width="300" onclick="q6clickPic(1);">
+      <input type="text" name="q6text" id="q6text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>7. How big is your current household?</b></h2>
       <div class="slidecontainer">
@@ -158,60 +123,35 @@
       <h4 style="text-align:center; display:inline-block; width: 33%;" onclick="q7clickPic(0);">1-2</h4>
       <h4 style="text-align:center; display:inline-block; width: 33%;" onclick="q7clickPic(1);">3-4</h4>
       <h4 style="text-align:center; display:inline-block; width: 33%;" onclick="q7clickPic(2);">5+</h4>
-
-      <h2 align="center"><span id="q7text"></span></h2>
+      <input type="text" name="q7text" id="q7text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>8. Do you prefer a night at home with a few friends, or going out on the town?</b></h2>
-      <img style="display:inline-block;" hspace="70" src="img/chill night.jpg" height="200" width="250" onclick="q8clickPic(0);">
-      <img style="display:inline-block;" hspace="70" src="img/clubbing.jpg" height="200" width="250" onclick="q8clickPic(1);">
-      <h2 align="center"><span id="q8text"></span></h2>
+      <img style="display:inline-block;" hspace="70" src="img/chill night.jpg" height="155" width="250" onclick="q8clickPic(0);">
+      <img style="display:inline-block;" hspace="70" src="img/clubbing.jpg" height="155" width="250" onclick="q8clickPic(1);">
+      <input type="text" name="q8text" id="q8text">
     </div>
-
-    <br/><br/><br/>
     <div style="text-align:center;">
       <h2 class="question"><b>9. How environmentally conscious would you consider yourself?</b></h2>
       <div class="slidecontainer">
         <input type="range" min="0" max="3" value="0" style="width:100%;height:10px;padding-left:140px;padding-right:140px" class="slider" id="q9">
-        <img hspace="45" src="img/plastic in the ocean.jpg" height="200" width="200" onclick="q9clickPic(0);">
-        <img hspace="45" src="img/recycle a little.jpg" height="200" width="180" onclick="q9clickPic(1);">
-        <img hspace="45" src="img/recycle a lot.jpg" height="200" width="200" onclick="q9clickPic(2);">
-        <img hspace="45" src="img/tree hugger.jpg" height="200" width="200" onclick="q9clickPic(3);">
-        <h2 align="center"><span id="q9text"></span></h2>
+        <img src="img/plastic in the ocean.jpg" height="155" width="155" onclick="q9clickPic(0);">
+        <img src="img/recycle a little.jpg" height="155" width="180" onclick="q9clickPic(1);">
+        <img src="img/recycle a lot.jpg" height="155" width="155" onclick="q9clickPic(2);">
+        <img src="img/tree hugger.jpg" height="155" width="155" onclick="q9clickPic(3);">
+        <input type="text" name="q9text" id="q9text">
       </div>
     </div>
-
-    <br/><br/><br/>
-    <h3 align="left">Results</h3>
-    <p>Q1-1: <span id="q11results"></span></p>
-    <p>Q1-2: <span id="q12results"></span></p>
-    <p>Q1-3: <span id="q13results"></span></p>
-    <p>Q1-4: <span id="q14results"></span></p>
-    <p>Q1-5: <span id="q15results"></span></p>
-    <p>Q1-6: <span id="q16results"></span></p>
-    <p>Q1-7: <span id="q17results"></span></p>
-    <p>Q2: <span id="q2results"></span></p>
-    <p>Q3: <span id="q3results"></span></p>
-    <p>Q4: <span id="q4results"></span></p>
-    <p>Q5: <span id="q5results"></span></p>
-    <p>Q6: <span id="q6results"></span></p>
-    <p>Q7: <span id="q7results"></span></p>
-    <p>Q8: <span id="q8results"></span></p>
-    <p>Q9: <span id="q9results"></span></p>
-
     <div class="row">
-      <div class="col s6">
-        <button class="btn waves-effect waves-light" type="submit" name="action">
-        Submit<i class="material-icons right">send</i>
+      <div class="col s10 offset-s2">
+        <button id="submit_form" style="font-size:66px;height:124px;width:800px" class="btn waves-effect waves-light" type="submit">
+        Find My Ideal Car<i class="material-icons right">send</i>
         </button>
       </div>
     </div>
   </form>
 </div>
 <script>
-  $(document).ready(function() {});
 </script>
 <!-- Main script -->
 <script src="js/main.js"></script>
