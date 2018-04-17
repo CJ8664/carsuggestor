@@ -1,0 +1,1191 @@
+Audi	100	1992
+Audi	100	1992
+Audi	100	1992
+Audi	100	1992
+Audi	100	1992
+Audi	100	1993
+Audi	100	1993
+Audi	100	1993
+Audi	100	1993
+Audi	100	1993
+Audi	100	1994
+Audi	100	1994
+Audi	100	1994
+Audi	100	1994
+Audi	100	1994
+Mercedes-Benz	190-Class	1991
+Mercedes-Benz	190-Class	1991
+Mercedes-Benz	190-Class	1992
+Mercedes-Benz	190-Class	1992
+Mercedes-Benz	190-Class	1993
+Mercedes-Benz	190-Class	1993
+Audi	200	1990
+Audi	200	1990
+Audi	200	1990
+Audi	200	1991
+Audi	200	1991
+Audi	200	1991
+Nissan	200SX	1996
+Nissan	200SX	1996
+Nissan	200SX	1996
+Nissan	200SX	1997
+Nissan	200SX	1997
+Nissan	200SX	1997
+Nissan	200SX	1998
+Nissan	200SX	1998
+Nissan	200SX	1998
+Volvo	240	1991
+Volvo	240	1991
+Volvo	240	1991
+Volvo	240	1992
+Volvo	240	1992
+Volvo	240	1992
+Volvo	240	1993
+Volvo	240	1993
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1991
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1992
+Mercedes-Benz	300-Class	1993
+Mercedes-Benz	300-Class	1993
+Mercedes-Benz	300-Class	1993
+Mazda	323	1992
+Mazda	323	1992
+Mazda	323	1993
+Mazda	323	1993
+Mazda	323	1994
+Mercedes-Benz	350-Class	1990
+Mercedes-Benz	350-Class	1990
+Mercedes-Benz	350-Class	1991
+Mercedes-Benz	400-Class	1992
+Mercedes-Benz	420-Class	1990
+Mercedes-Benz	420-Class	1991
+Mercedes-Benz	560-Class	1990
+Pontiac	6000	1990
+Pontiac	6000	1990
+Pontiac	6000	1990
+Pontiac	6000	1990
+Pontiac	6000	1990
+Pontiac	6000	1991
+Pontiac	6000	1991
+Pontiac	6000	1991
+Mazda	626	2000
+Mazda	626	2000
+Mazda	626	2000
+Mazda	626	2000
+Volvo	740	1990
+Volvo	740	1990
+Volvo	740	1990
+Volvo	740	1990
+Volvo	740	1990
+Volvo	740	1990
+Volvo	740	1991
+Volvo	740	1991
+Volvo	740	1991
+Volvo	740	1991
+Volvo	740	1991
+Volvo	740	1991
+Volvo	740	1992
+Volvo	740	1992
+Volvo	740	1992
+Volvo	740	1992
+Volvo	760	1990
+Volvo	760	1990
+Volvo	760	1990
+Volvo	780	1990
+Volvo	780	1990
+Audi	80	1990
+Audi	80	1990
+Audi	80	1991
+Audi	80	1991
+Audi	80	1992
+Audi	80	1992
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1995
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1996
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Volvo	850	1997
+Saab	9000	1996
+Saab	9000	1996
+Saab	9000	1996
+Saab	9000	1996
+Saab	9000	1997
+Saab	9000	1997
+Saab	9000	1997
+Saab	9000	1997
+Saab	9000	1997
+Saab	9000	1998
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1996
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1997
+Saab	900	1998
+Saab	900	1998
+Saab	900	1998
+Audi	90	1993
+Audi	90	1993
+Audi	90	1993
+Audi	90	1994
+Audi	90	1994
+Audi	90	1994
+Audi	90	1995
+Audi	90	1995
+Audi	90	1995
+Mazda	929	1993
+Mazda	929	1994
+Mazda	929	1995
+Volvo	940	1993
+Volvo	940	1993
+Volvo	940	1993
+Volvo	940	1993
+Volvo	940	1993
+Volvo	940	1993
+Volvo	940	1994
+Volvo	940	1994
+Volvo	940	1994
+Volvo	940	1994
+Volvo	940	1995
+Volvo	940	1995
+Volvo	940	1995
+Volvo	940	1995
+Volvo	960	1995
+Volvo	960	1995
+Volvo	960	1996
+Volvo	960	1996
+Volvo	960	1997
+Volvo	960	1997
+Plymouth	Acclaim	1993
+Plymouth	Acclaim	1994
+Plymouth	Acclaim	1995
+Oldsmobile	Achieva	1996
+Oldsmobile	Achieva	1996
+Oldsmobile	Achieva	1997
+Oldsmobile	Achieva	1997
+Oldsmobile	Achieva	1998
+Ford	Aerostar	1995
+Ford	Aerostar	1995
+Ford	Aerostar	1995
+Ford	Aerostar	1995
+Ford	Aerostar	1996
+Ford	Aerostar	1996
+Ford	Aerostar	1996
+Ford	Aerostar	1996
+Ford	Aerostar	1997
+Ford	Aerostar	1997
+Ford	Aerostar	1997
+Ford	Aerostar	1997
+Cadillac	Allante	1991
+Cadillac	Allante	1992
+Ford	Aspire	1995
+Ford	Aspire	1995
+Ford	Aspire	1995
+Ford	Aspire	1996
+Ford	Aspire	1996
+Ford	Aspire	1997
+Ford	Aspire	1997
+Nissan	Axxess	1990
+Nissan	Axxess	1990
+Nissan	Axxess	1990
+Nissan	Axxess	1990
+Mazda	B-Series Pickup	1998
+Mazda	B-Series Pickup	1999
+Chevrolet	Beretta	1994
+Chevrolet	Beretta	1994
+Chevrolet	Beretta	1995
+Chevrolet	Beretta	1995
+Chevrolet	Beretta	1996
+Chevrolet	Beretta	1996
+Plymouth	Breeze	1998
+Plymouth	Breeze	1998
+Plymouth	Breeze	1999
+Plymouth	Breeze	1999
+Plymouth	Breeze	2000
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Ford	Bronco II	1990
+Cadillac	Brougham	1990
+Cadillac	Brougham	1990
+Cadillac	Brougham	1991
+Cadillac	Brougham	1992
+Volkswagen	Cabriolet	1991
+Volkswagen	Cabriolet	1992
+Volkswagen	Cabriolet	1992
+Volkswagen	Cabriolet	1992
+Volkswagen	Cabriolet	1993
+Volkswagen	Cabriolet	1993
+Chevrolet	Caprice	1994
+Chevrolet	Caprice	1994
+Chevrolet	Caprice	1994
+Chevrolet	Caprice	1995
+Chevrolet	Caprice	1995
+Chevrolet	Caprice	1996
+Chevrolet	Caprice	1996
+Cadillac	Catera	1999
+Cadillac	Catera	2000
+Cadillac	Catera	2000
+Chevrolet	Celebrity	1990
+Chevrolet	Celebrity	1990
+Chevrolet	Chevy Van	1996
+Chevrolet	Chevy Van	1996
+Chevrolet	Chevy Van	1996
+Chevrolet	Chevy Van	1997
+Chevrolet	Chevy Van	1997
+Chevrolet	Chevy Van	1997
+Chevrolet	Chevy Van	1998
+Chevrolet	Chevy Van	1998
+Chevrolet	Chevy Van	1998
+Oldsmobile	Ciera	1995
+Oldsmobile	Ciera	1996
+Oldsmobile	Ciera	1996
+Chrysler	Cirrus	1998
+Chrysler	Cirrus	1999
+Honda	Civic CRX	1990
+Honda	Civic CRX	1990
+Honda	Civic CRX	1990
+Honda	Civic CRX	1991
+Honda	Civic CRX	1991
+Honda	Civic CRX	1991
+Honda	Civic del Sol	1995
+Honda	Civic del Sol	1995
+Honda	Civic del Sol	1995
+Honda	Civic del Sol	1996
+Honda	Civic del Sol	1996
+Honda	Civic del Sol	1996
+Honda	Civic del Sol	1997
+Chevrolet	C/K 1500 Series	1997
+Chevrolet	C/K 1500 Series	1997
+Dodge	Colt	1992
+Dodge	Colt	1992
+Dodge	Colt	1993
+Dodge	Colt	1993
+Dodge	Colt	1993
+Dodge	Colt	1993
+Dodge	Colt	1994
+Dodge	Colt	1994
+Dodge	Colt	1994
+Dodge	Colt	1994
+Plymouth	Colt	1992
+Plymouth	Colt	1992
+Plymouth	Colt	1992
+Plymouth	Colt	1992
+Plymouth	Colt	1992
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1993
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Plymouth	Colt	1994
+Ford	Contour	1998
+Ford	Contour	1998
+Ford	Contour	1998
+Ford	Contour	1998
+Ford	Contour	1999
+Ford	Contour	1999
+Ford	Contour	2000
+Ford	Contour	2000
+Volkswagen	Corrado	1992
+Volkswagen	Corrado	1992
+Volkswagen	Corrado	1993
+Volkswagen	Corrado	1994
+Chevrolet	Corsica	1994
+Chevrolet	Corsica	1996
+Audi	Coupe	1990
+Audi	Coupe	1991
+Volvo	Coupe	1991
+Toyota	Cressida	1990
+Toyota	Cressida	1991
+Toyota	Cressida	1992
+Oldsmobile	Custom Cruiser	1990
+Oldsmobile	Custom Cruiser	1991
+Oldsmobile	Custom Cruiser	1992
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1990
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Calais	1991
+Oldsmobile	Cutlass Ciera	1992
+Oldsmobile	Cutlass Ciera	1992
+Oldsmobile	Cutlass Ciera	1992
+Oldsmobile	Cutlass Ciera	1992
+Oldsmobile	Cutlass Ciera	1993
+Oldsmobile	Cutlass Ciera	1993
+Oldsmobile	Cutlass Ciera	1993
+Oldsmobile	Cutlass Ciera	1993
+Oldsmobile	Cutlass Ciera	1994
+Oldsmobile	Cutlass Ciera	1994
+Oldsmobile	Cutlass Ciera	1994
+Oldsmobile	Cutlass Ciera	1994
+Oldsmobile	Cutlass Supreme	1995
+Oldsmobile	Cutlass Supreme	1995
+Oldsmobile	Cutlass Supreme	1995
+Oldsmobile	Cutlass Supreme	1996
+Oldsmobile	Cutlass Supreme	1996
+Oldsmobile	Cutlass Supreme	1997
+Oldsmobile	Cutlass Supreme	1997
+Oldsmobile	Cutlass	1997
+Oldsmobile	Cutlass	1997
+Oldsmobile	Cutlass	1998
+Oldsmobile	Cutlass	1998
+Oldsmobile	Cutlass	1999
+Oldsmobile	Cutlass	1999
+Dodge	Daytona	1991
+Dodge	Daytona	1991
+Dodge	Daytona	1991
+Dodge	Daytona	1991
+Dodge	Daytona	1991
+Dodge	Daytona	1991
+Dodge	Daytona	1992
+Dodge	Daytona	1992
+Dodge	Daytona	1992
+Dodge	Daytona	1992
+Dodge	Daytona	1993
+Dodge	Daytona	1993
+Dodge	Daytona	1993
+Dodge	Daytona	1993
+Dodge	Dynasty	1991
+Dodge	Dynasty	1991
+Dodge	Dynasty	1992
+Dodge	Dynasty	1992
+Dodge	Dynasty	1993
+Dodge	Dynasty	1993
+Ford	E-150	1996
+Ford	E-150	1996
+Ford	E-150	1996
+Ford	E-150	1996
+Ford	E-150	1996
+Ford	E-150	1997
+Ford	E-150	1997
+Ford	E-150	1997
+Ford	E-150	1997
+Ford	E-150	1998
+Ford	E-150	1998
+Ford	E-250	1996
+Ford	E-250	1996
+Ford	E-250	1996
+Ford	E-250	1996
+Ford	E-250	1997
+Ford	E-250	1997
+Ford	E-250	1997
+Ford	E-250	1997
+Ford	E-250	1998
+Ford	E-250	1998
+Oldsmobile	Eighty-Eight Royale	1993
+Oldsmobile	Eighty-Eight Royale	1993
+Oldsmobile	Eighty-Eight Royale	1994
+Oldsmobile	Eighty-Eight Royale	1994
+Oldsmobile	Eighty-Eight Royale	1994
+Oldsmobile	Eighty-Eight Royale	1994
+Oldsmobile	Eighty-Eight Royale	1995
+Oldsmobile	Eighty-Eight Royale	1995
+Oldsmobile	Eighty-Eight Royale	1995
+Oldsmobile	Eighty-Eight Royale	1995
+Oldsmobile	Eighty-Eight	1997
+Oldsmobile	Eighty-Eight	1997
+Oldsmobile	Eighty-Eight	1998
+Oldsmobile	Eighty-Eight	1998
+Oldsmobile	Eighty-Eight	1999
+Oldsmobile	Eighty-Eight	1999
+Buick	Electra	1990
+Buick	Electra	1990
+Buick	Electra	1990
+Buick	Electra	1990
+Lexus	ES 250	1990
+Lexus	ES 250	1991
+Buick	Estate Wagon	1990
+Suzuki	Esteem	2000
+Suzuki	Esteem	2000
+Suzuki	Esteem	2000
+Suzuki	Esteem	2000
+Hyundai	Excel	1992
+Hyundai	Excel	1992
+Hyundai	Excel	1992
+Hyundai	Excel	1992
+Hyundai	Excel	1993
+Hyundai	Excel	1993
+Hyundai	Excel	1993
+Hyundai	Excel	1993
+Hyundai	Excel	1994
+Hyundai	Excel	1994
+Hyundai	Excel	1994
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1993
+Mitsubishi	Expo	1994
+Mitsubishi	Expo	1994
+Mitsubishi	Expo	1994
+Mitsubishi	Expo	1994
+Mitsubishi	Expo	1994
+Mitsubishi	Expo	1995
+Mitsubishi	Expo	1995
+Ford	Festiva	1991
+Ford	Festiva	1991
+Ford	Festiva	1992
+Ford	Festiva	1992
+Ford	Festiva	1993
+Ford	Festiva	1993
+Cadillac	Fleetwood	1994
+Cadillac	Fleetwood	1995
+Cadillac	Fleetwood	1996
+Volkswagen	Fox	1991
+Volkswagen	Fox	1991
+Volkswagen	Fox	1992
+Volkswagen	Fox	1992
+Volkswagen	Fox	1993
+Volkswagen	Fox	1993
+Volkswagen	Fox	1993
+Infiniti	G20	2000
+Chrysler	Grand Voyager	2000
+Plymouth	Grand Voyager	1998
+Plymouth	Grand Voyager	1998
+Plymouth	Grand Voyager	1998
+Plymouth	Grand Voyager	1999
+Plymouth	Grand Voyager	1999
+Plymouth	Grand Voyager	1999
+Plymouth	Horizon	1990
+Chrysler	Imperial	1991
+Chrysler	Imperial	1992
+Chrysler	Imperial	1993
+Oldsmobile	Intrigue	2000
+Infiniti	J30	1995
+Infiniti	J30	1996
+Infiniti	J30	1996
+Infiniti	J30	1997
+Infiniti	J30	1997
+Infiniti	J30	1997
+Infiniti	J30	1997
+GMC	Jimmy	1999
+GMC	Jimmy	1999
+GMC	Jimmy	1999
+Subaru	Justy	1992
+Subaru	Justy	1992
+Subaru	Justy	1992
+Subaru	Justy	1992
+Subaru	Justy	1993
+Subaru	Justy	1993
+Subaru	Justy	1993
+Subaru	Justy	1993
+Subaru	Justy	1994
+Subaru	Justy	1994
+Plymouth	Laser	1992
+Plymouth	Laser	1992
+Plymouth	Laser	1992
+Plymouth	Laser	1992
+Plymouth	Laser	1993
+Plymouth	Laser	1993
+Plymouth	Laser	1993
+Plymouth	Laser	1993
+Plymouth	Laser	1994
+Plymouth	Laser	1994
+Plymouth	Laser	1994
+Plymouth	Laser	1994
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1993
+Chrysler	Le Baron	1994
+Chrysler	Le Baron	1994
+Chrysler	Le Baron	1994
+Chrysler	Le Baron	1995
+Pontiac	Le Mans	1991
+Pontiac	Le Mans	1991
+Pontiac	Le Mans	1991
+Pontiac	Le Mans	1992
+Pontiac	Le Mans	1992
+Pontiac	Le Mans	1992
+Pontiac	Le Mans	1993
+Pontiac	Le Mans	1993
+Pontiac	Le Mans	1993
+Acura	Legend	1993
+Acura	Legend	1993
+Acura	Legend	1993
+Acura	Legend	1993
+Acura	Legend	1993
+Acura	Legend	1994
+Acura	Legend	1994
+Acura	Legend	1994
+Acura	Legend	1994
+Acura	Legend	1995
+Acura	Legend	1995
+Acura	Legend	1995
+Chrysler	LHS	1999
+Chrysler	LHS	2000
+Subaru	Loyale	1992
+Subaru	Loyale	1992
+Subaru	Loyale	1992
+Subaru	Loyale	1992
+Subaru	Loyale	1993
+Subaru	Loyale	1993
+Subaru	Loyale	1993
+Subaru	Loyale	1993
+Subaru	Loyale	1994
+Oldsmobile	LSS	1997
+Oldsmobile	LSS	1997
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1990
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Ford	LTD Crown Victoria	1991
+Chevrolet	Lumina Minivan	1994
+Chevrolet	Lumina Minivan	1994
+Chevrolet	Lumina Minivan	1995
+Chevrolet	Lumina Minivan	1995
+Chevrolet	Lumina Minivan	1996
+Chevrolet	Lumina Minivan	1996
+Chevrolet	Lumina	1999
+Chevrolet	Lumina	1999
+Chevrolet	Lumina	1999
+Chevrolet	Lumina	2000
+Infiniti	M30	1990
+Infiniti	M30	1991
+Infiniti	M30	1991
+Infiniti	M30	1992
+Infiniti	M30	1992
+Lincoln	Mark VIII	1996
+Lincoln	Mark VIII	1996
+Lincoln	Mark VIII	1997
+Lincoln	Mark VII	1990
+Lincoln	Mark VII	1990
+Lincoln	Mark VII	1991
+Lincoln	Mark VII	1991
+Lincoln	Mark VII	1992
+Lincoln	Mark VII	1992
+Chevrolet	Metro	1999
+Chevrolet	Metro	1999
+Chevrolet	Metro	1999
+Chevrolet	Metro	2000
+Chevrolet	Metro	2000
+Chevrolet	Metro	2000
+Mitsubishi	Mighty Max Pickup	1994
+Mitsubishi	Mighty Max Pickup	1994
+Mitsubishi	Mighty Max Pickup	1994
+Mitsubishi	Mighty Max Pickup	1995
+Mitsubishi	Mighty Max Pickup	1996
+Mazda	Millenia	2000
+Dodge	Monaco	1990
+Dodge	Monaco	1990
+Dodge	Monaco	1991
+Dodge	Monaco	1991
+Dodge	Monaco	1992
+Dodge	Monaco	1992
+Toyota	MR2	1993
+Toyota	MR2	1993
+Toyota	MR2	1994
+Toyota	MR2	1995
+Mazda	MX-3	1993
+Mazda	MX-3	1993
+Mazda	MX-3	1993
+Mazda	MX-3	1994
+Mazda	MX-3	1994
+Mazda	MX-3	1995
+Mazda	MX-6	1995
+Mazda	MX-6	1995
+Mazda	MX-6	1996
+Mazda	MX-6	1996
+Mazda	MX-6	1996
+Mazda	MX-6	1997
+Mazda	MX-6	1997
+Mazda	Navajo	1992
+Mazda	Navajo	1992
+Mazda	Navajo	1992
+Mazda	Navajo	1992
+Mazda	Navajo	1993
+Mazda	Navajo	1993
+Mazda	Navajo	1993
+Mazda	Navajo	1993
+Mazda	Navajo	1994
+Mazda	Navajo	1994
+Mazda	Navajo	1994
+Mazda	Navajo	1994
+Plymouth	Neon	1999
+Plymouth	Neon	1999
+Plymouth	Neon	1999
+Plymouth	Neon	1999
+Plymouth	Neon	1999
+Plymouth	Neon	1999
+Plymouth	Neon	2000
+Plymouth	Neon	2000
+Chrysler	New Yorker	1994
+Chrysler	New Yorker	1995
+Chrysler	New Yorker	1996
+Oldsmobile	Ninety-Eight	1994
+Oldsmobile	Ninety-Eight	1994
+Oldsmobile	Ninety-Eight	1994
+Oldsmobile	Ninety-Eight	1994
+Oldsmobile	Ninety-Eight	1995
+Oldsmobile	Ninety-Eight	1995
+Oldsmobile	Ninety-Eight	1996
+Nissan	NX	1991
+Nissan	NX	1991
+Nissan	NX	1992
+Nissan	NX	1992
+Nissan	NX	1993
+Nissan	NX	1993
+Dodge	Omni	1990
+Toyota	Paseo	1995
+Toyota	Paseo	1996
+Toyota	Paseo	1997
+Toyota	Paseo	1997
+Toyota	Pickup	1993
+Toyota	Pickup	1993
+Toyota	Pickup	1993
+Toyota	Pickup	1993
+Toyota	Pickup	1993
+Toyota	Pickup	1994
+Toyota	Pickup	1994
+Toyota	Pickup	1994
+Toyota	Pickup	1994
+Toyota	Pickup	1994
+Toyota	Pickup	1994
+Toyota	Pickup	1995
+Toyota	Pickup	1995
+Toyota	Pickup	1995
+Mitsubishi	Precis	1992
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1995
+Toyota	Previa	1996
+Toyota	Previa	1996
+Toyota	Previa	1997
+Chevrolet	Prizm	2000
+Chevrolet	Prizm	2000
+Ford	Probe	1995
+Ford	Probe	1995
+Ford	Probe	1995
+Ford	Probe	1996
+Ford	Probe	1996
+Ford	Probe	1996
+Ford	Probe	1997
+Ford	Probe	1997
+Nissan	Pulsar	1990
+GMC	Rally Wagon	1994
+GMC	Rally Wagon	1994
+GMC	Rally Wagon	1994
+GMC	Rally Wagon	1994
+GMC	Rally Wagon	1995
+GMC	Rally Wagon	1995
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1991
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1992
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 150	1993
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1991
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1992
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	RAM 250	1993
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1991
+Dodge	Ram 50 Pickup	1992
+Dodge	Ram 50 Pickup	1992
+Dodge	Ram 50 Pickup	1992
+Dodge	Ram 50 Pickup	1992
+Dodge	Ram 50 Pickup	1992
+Dodge	Ram 50 Pickup	1993
+Dodge	Ram 50 Pickup	1993
+Dodge	Ram 50 Pickup	1993
+Dodge	Ram 50 Pickup	1993
+Dodge	Ram Van	1998
+Dodge	Ram Van	1998
+Dodge	Ram Van	1998
+Dodge	Ram Van	1998
+Dodge	Ram Van	1999
+Dodge	Ram Van	1999
+Dodge	Ram Van	2000
+Dodge	Ram Van	2000
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1991
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1992
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Dodge	Ramcharger	1993
+Buick	Reatta	1990
+Buick	Reatta	1990
+Buick	Reatta	1991
+Buick	Reatta	1991
+Oldsmobile	Regency	1997
+Oldsmobile	Regency	1998
+Buick	Riviera	1997
+Buick	Riviera	1997
+Buick	Riviera	1998
+Buick	Roadmaster	1994
+Buick	Roadmaster	1994
+Buick	Roadmaster	1994
+Buick	Roadmaster	1995
+Buick	Roadmaster	1995
+Buick	Roadmaster	1995
+Buick	Roadmaster	1996
+Buick	Roadmaster	1996
+Buick	Roadmaster	1996
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1992
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1993
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+Chevrolet	S-10 Blazer	1994
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1990
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15 Jimmy	1991
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+GMC	S-15	1990
+Volvo	S70	1998
+Volvo	S70	1998
+Volvo	S70	1998
+Volvo	S70	1998
+Volvo	S70	1999
+Suzuki	Samurai	1993
+Suzuki	Samurai	1993
+Suzuki	Samurai	1994
+Suzuki	Samurai	1995
+Hyundai	Scoupe	1993
+Hyundai	Scoupe	1993
+Hyundai	Scoupe	1993
+Hyundai	Scoupe	1994
+Hyundai	Scoupe	1994
+Hyundai	Scoupe	1994
+Hyundai	Scoupe	1995
+Hyundai	Scoupe	1995
+Hyundai	Scoupe	1995
+Kia	Sephia	1999
+Kia	Sephia	1999
+Kia	Sephia	2000
+Kia	Sephia	2000
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1992
+Dodge	Shadow	1993
+Dodge	Shadow	1993
+Dodge	Shadow	1993
+Dodge	Shadow	1993
+Dodge	Shadow	1993
+Dodge	Shadow	1993
+Dodge	Shadow	1994
+Dodge	Shadow	1994
+Dodge	Shadow	1994
+Dodge	Shadow	1994
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1996
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1997
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Suzuki	Sidekick	1998
+Mitsubishi	Sigma	1990
+Cadillac	Sixty Special	1993
+Buick	Skylark	1996
+Buick	Skylark	1996
+Buick	Skylark	1996
+Buick	Skylark	1997
+Buick	Skylark	1997
+Buick	Skylark	1997
+Buick	Skylark	1997
+Buick	Skylark	1998
+Dodge	Spirit	1993
+Dodge	Spirit	1993
+Dodge	Spirit	1994
+Dodge	Spirit	1995
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1994
+Chevrolet	Sportvan	1995
+Chevrolet	Sportvan	1995
+Nissan	Stanza	1990
+Nissan	Stanza	1990
+Nissan	Stanza	1991
+Nissan	Stanza	1991
+Nissan	Stanza	1992
+Nissan	Stanza	1992
+Nissan	Stanza	1992
+Dodge	Stealth	1994
+Dodge	Stealth	1994
+Dodge	Stealth	1995
+Dodge	Stealth	1996
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1992
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1993
+Pontiac	Sunbird	1994
+Pontiac	Sunbird	1994
+Pontiac	Sunbird	1994
+Pontiac	Sunbird	1994
+Plymouth	Sundance	1992
+Plymouth	Sundance	1992
+Plymouth	Sundance	1992
+Plymouth	Sundance	1992
+Plymouth	Sundance	1992
+Plymouth	Sundance	1992
+Plymouth	Sundance	1993
+Plymouth	Sundance	1993
+Plymouth	Sundance	1993
+Plymouth	Sundance	1993
+Plymouth	Sundance	1994
+Plymouth	Sundance	1994
+Plymouth	Sundance	1994
+Plymouth	Sundance	1994
+Subaru	SVX	1995
+Subaru	SVX	1995
+Subaru	SVX	1995
+Subaru	SVX	1995
+Suzuki	Swift	1999
+Suzuki	Swift	2000
+Suzuki	Swift	2000
+Toyota	T100	1996
+Chrysler	TC	1990
+Chrysler	TC	1990
+Chrysler	TC	1991
+Ford	Tempo	1992
+Ford	Tempo	1992
+Ford	Tempo	1992
+Ford	Tempo	1992
+Ford	Tempo	1992
+Ford	Tempo	1993
+Ford	Tempo	1993
+Ford	Tempo	1993
+Ford	Tempo	1994
+Ford	Tempo	1994
+Ford	Tempo	1994
+Toyota	Tercel	1996
+Toyota	Tercel	1996
+Toyota	Tercel	1996
+Toyota	Tercel	1997
+Toyota	Tercel	1997
+Toyota	Tercel	1997
+Toyota	Tercel	1998
+Oldsmobile	Toronado	1990
+Oldsmobile	Toronado	1990
+Oldsmobile	Toronado	1991
+Oldsmobile	Toronado	1991
+Oldsmobile	Toronado	1992
+Oldsmobile	Toronado	1992
+Pontiac	Trans Sport	1996
+Pontiac	Trans Sport	1997
+Pontiac	Trans Sport	1997
+Pontiac	Trans Sport	1998
+Pontiac	Trans Sport	1998
+Pontiac	Trans Sport	1998
+Pontiac	Trans Sport	1998
+Nissan	Truck	1995
+Nissan	Truck	1995
+Nissan	Truck	1995
+Nissan	Truck	1995
+Nissan	Truck	1995
+Nissan	Truck	1995
+Nissan	Truck	1996
+Nissan	Truck	1996
+Nissan	Truck	1997
+Audi	V8	1992
+Audi	V8	1993
+Audi	V8	1994
+Volvo	V90	1998
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1990
+Volkswagen	Vanagon	1991
+Volkswagen	Vanagon	1991
+Volkswagen	Vanagon	1991
+Volkswagen	Vanagon	1991
+GMC	Vandura	1994
+GMC	Vandura	1994
+GMC	Vandura	1994
+GMC	Vandura	1994
+GMC	Vandura	1994
+GMC	Vandura	1994
+GMC	Vandura	1995
+GMC	Vandura	1995
+GMC	Vandura	1995
+GMC	Vandura	1995
+GMC	Vandura	1995
+Nissan	Van	1990
+Nissan	Van	1990
+Mitsubishi	Vanwagon	1990
+Mitsubishi	Vanwagon	1990
+Acura	Vigor	1992
+Acura	Vigor	1992
+Acura	Vigor	1993
+Acura	Vigor	1993
+Acura	Vigor	1994
+Acura	Vigor	1994
+Plymouth	Voyager	1998
+Plymouth	Voyager	1998
+Plymouth	Voyager	1998
+Plymouth	Voyager	1999
+Plymouth	Voyager	1999
+Plymouth	Voyager	1999
+Plymouth	Voyager	2000
+Suzuki	X-90	1996
+Suzuki	X-90	1996
+Suzuki	X-90	1997
+Suzuki	X-90	1997
+Suzuki	X-90	1998
+Suzuki	X-90	1998
+Suzuki	X-90	1998
+Subaru	XT	1991
+Subaru	XT	1991
+Subaru	XT	1991
