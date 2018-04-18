@@ -113,7 +113,6 @@ app.post('/showcar', function(req, res) {
                       client.query(positiveQry, (err, result) => {
                         result.rows.forEach(function(value) {
                           posReviews.push(value.review_text);
-                          console.log(value.review_text);
                         });
                       })
                       client.query(negativeQry, (err, result) => {
@@ -121,9 +120,9 @@ app.post('/showcar', function(req, res) {
                           negReviews.push(value.review_text);
                         });
                       })
-                      sleep(5000).then(() => {
+                      sleep(3000).then(() => {
                         final_result.push({
-                          'car': car_name,
+                          'car': carMake.toUpperCase() + ' ' + carModel.toUpperCase(),
                           'positive': posReviews,
                           'negative': negReviews
                         })
